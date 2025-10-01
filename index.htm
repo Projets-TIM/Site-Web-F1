@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>TP2</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/F1.png" alt="Logo F1" />   <!-- Logo F1 -->
+      <input type="checkbox" id="chk_burger" />
+
+      <label id="burger" for="chk_burger">                            
+        <img
+          src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=fff"
+          width="32"
+          height="32"
+          alt="menu burger"
+        />
+        <!--  images utilisés pour le menu burger et le menu burger ouvert--> 
+        <img  
+          src="https://s2.svgbox.net/hero-solid.svg?ic=x&color=fff"
+          width="32"
+          height="32"                                                                   
+          alt="menu burger"
+        />
+      </label>                                                                    <!-- div header contenant le titre, le logo de mon site, le menu burger et le nav-->
+
+      <nav class="menu">
+        <a href="#equipe">Équipes</a>
+        <a href="#nouvelles">Nouvelles</a>
+        <a href="#merci">Merci!</a>
+        <a href="#piedpage">Pied Page</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>                       <!-- Premier article contenant tout les voitures et les noms des conducteurs-->
+        <h1>Équipes F1 2024</h1>
+
+        <div id="conteneur-div">    <!-- Div utiliser pour englober le paragraphe et l'animation sprite sheet pour les mettre a cote-->                                                     
+          <p>
+            Découvrez tout ce que vous devez savoir sur les équipes de Formule 1      
+            de cette année - les pilotes, les podiums et les points gagnés.       
+          </p>
+          <div id="maDiv2"><img id="sprite3" alt="" /></div>
+        </div>
+        <hr>
+        <div id = conteneur-grid>   <!-- Grid utiliser pour le format PC, pour mettre 2 voitures dans un row-->
+        <div  class="equipe">  <!-- creation des divs avec classe equipe, qui occupent les modifications de touts les equipes F1, leurs voitures, conducteurs, etcs-->
+          <h2>1. Red Bull Racing</h2>
+          <div class="nom">
+            <p>Max Verstappen</p>
+            <p>Sergio Perez</p>
+          </div>
+          <div class="pointage">      <!-- Div utiliser pour les pointages de chaque equipe, de montrer le pointage a cote des voitures c'est la meme chose pour les 10 prochaines voitures-->
+            <img class="voitures" src="images/RedBull.png" alt="Red Bull" />  
+            <p>239 PTS</p>
+          </div>
+
+          <p>
+            Red Bull n'était pas étranger à la F1 - en tant que sponsor - avant
+            d'y entrer officiellement en tant qu'équipe d'usine en 2004.
+            Néanmoins, l'ampleur de leur succès au cours de la décennie suivante
+            a été stupéfiante.
+          </p>
+        </div>
+        <div class="equipe">
+          <h2>2. Ferrari</h2>
+          <div class="nom">
+            <p>Charles Leclerc</p>
+            <p>Carlos Sainz</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/Ferrari.png" alt="Ferarri" />
+            <p>187 PTS</p>
+          </div>
+          <p>
+            Pour plusieurs, Ferrari et la Formule 1 sont devenus inséparables.
+            Seule équipe à avoir participé à toutes les saisons depuis le début
+            du championnat du monde, le cheval cabré est passé de l'humble rêve
+            de son fondateur Enzo Ferrari à l'une des marques les plus
+            emblématiques et les plus reconnues au monde.
+          </p>
+        </div>
+
+        <div class="equipe">
+          <h2>3. McLaren</h2>
+          <div class="nom">
+            <p>Lando Norris</p>
+            <p>Oscar Piastri</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/McLaren.png" alt="McLaren" />
+            <p>124 PTS</p>
+          </div>
+          <p>
+            Depuis son entrée dans le sport automobile en 1966, sous la houlette
+            et les efforts incessants du fondateur éponyme Bruce, McLaren a
+            connu un succès tout simplement époustouflant. Cinq décennies
+            brillantes ont donné lieu à d'innombrables victoires, pole positions
+            et podiums, sans oublier huit championnats des constructeurs.
+          </p>
+        </div>
+
+        <div class="equipe">
+          <h2>4. Mercedes</h2>
+          <div class="nom">
+            <p>Lewis Hamilton</p>
+            <p>George Russell</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/Mercedes.png" alt="Mercedes" />
+            <p>64 PTS</p>
+          </div>
+          <p>
+            La renaissance moderne de Mercedes en F1 a commencé avec la création
+            d'une équipe d'usine pour 2010 - la plate-forme pour une ascension
+            météorique dans l'ordre des Grands Prix.
+          </p>
+        </div>
+
+        <div class="equipe">
+          <h2>5. Aston Martin</h2>
+          <div class="nom">
+            <p>Fernando Alonso</p>
+            <p>Lance Stroll</p>
+          </div>
+          <div class="pointage">
+            <img
+              class="voitures"
+              src="images/AstonMartin.png"
+              alt="Aston Martin"
+            />
+            <p>42 PTS</p>
+          </div>
+          <p>
+            La première incursion d'Aston Martin en Formule 1 - il y a plus d'un
+            demi-siècle - n'a duré que cinq courses. Mais cette fois, c'est du
+            sérieux. Cette équipe de F1 n'est pas étrangère au succès,
+            puisqu'elle a remporté des victoires sous le nom de Jordan et, plus
+            récemment, sous celui de Racing Point en 2020.
+          </p>
+        </div>
+        
+        <div class="equipe">
+          <h2>6. RB</h2>
+          <div class="nom">
+            <p>Yuki Tsunoda</p>
+            <p>Daniel Ricciardo</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/RB.png" alt="RB" />
+            <p>19 PTS</p>
+          </div>
+          <p>
+            Créée en 2006 pour permettre aux jeunes pilotes issus du prodigieux
+            vivier de talents de Red Bull de se faire les dents en F1, RB -
+            initialement nommée Toro Rosso puis AlphaTauri - est née des cendres
+            de l'équipe Minardi, qui n'avait pas froid aux yeux.
+          </p>
+        </div>
+
+        <div class="equipe">
+          <h2>7. Haas</h2>
+          <div class="nom">
+            <p>Nico Hulkenberg</p>
+            <p>Kevin Magnussen</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/Haas.png" alt="Haas" />
+            <p>7 PTS</p>
+          </div>
+          <p>
+            Plus jeune équipe de la grille, Haas a fait des débuts très
+            impressionnants en 2016, devenant du même coup la première écurie de
+            F1 entièrement américaine en trois décennies.
+          </p>
+        </div>
+
+        <div class="equipe">
+          <h2>8. Alpine</h2>
+          <div class="nom">
+            <p>Pierre Gasly</p>
+            <p>Esteban Ocon</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/Alpine.png" alt="Alpine" />
+            <p>1 PTS</p>
+          </div>
+          <p>
+            Alpine est peut-être un nom relativement nouveau en Formule 1, mais
+            la célèbre branche sportive de Renault a beaucoup d'héritage en
+            matière de sport automobile.
+          </p>
+        </div>
+
+        <div class="equipe">
+          <h2>9. Williams</h2>
+          <div class="nom">
+            <p>Alexander Albon</p>
+            <p>Logan Sargeant</p>
+          </div>
+          <div class="pointage">
+            <img class="voitures" src="images/Williams.png" alt="Williams" />
+            <p>0 PTS</p>
+          </div>
+          <p>
+            Poussée par l'intelligence et la passion de feu Sir Frank Williams,
+            l'écurie Williams, après des débuts modestes, est devenue un
+            mastodonte de la Formule 1, sans commune mesure avec Ferrari et
+            McLaren en termes de succès durable.
+          </p>
+        </div>
+        <div class="equipe">
+          <h2>10. Kick Sauber</h2>
+          <div class="nom">
+            <p>Valtteri Bottas</p>
+            <p>Zhou Guanyu</p>
+          </div>
+          <div class="pointage">
+            <img
+              class="voitures"
+              src="images/KickSauber.png"
+              alt="Kick Sauber"
+            />
+            <p>0 PTS</p>
+          </div>
+          <p style = "padding-bottom: 100px">
+            L'équipe s'est imposée comme un pilier de la grille de départ,
+            remportant des courses pendant la brève période où elle a appartenu
+            à BMW, et se forgeant une réputation bien méritée non seulement pour
+            la production de voitures compétitives, mais aussi pour la formation
+            de jeunes pilotes.
+          </p>
+        </div>
+      </div>
+      </article>
+
+      <hr>
+      <div id = "nouvelles">    <!-- Deuxieme article contenant les nouvelles de F1, la plus recent etant Lando Norris qui gagne pour la premiere fois -->
+      <article id="article2">
+        <h1>NOUVELLES F1</h1>
+        <h2>LANDO NORRIS PREMIERE VICTOIRE 🏆</h2>
+   
+
+    <div id="lando-container"> <!-- Nouveau conteneur -->
+      <img src="images/norris.avif" alt=" Lando Norris" />
+      <p>
+        Lando Norris dit qu'il avait la célébration en tête avant le drapeau à
+        damier du Grand Prix de Miami. Le pilote McLaren a remporté sa toute
+        première course en Formule 1, à sa 110e tentative, en battant le
+        champion du monde en titre Max Verstappen. Malgré son palmarès, il dit
+        avoir su "dès le 30e tour" qu'il allait décrocher la première place.
+        "Les deux ou trois derniers tours, je me demandais vraiment comment
+        fêter ça", raconte-t-il. "J'étais calme", a-t-il déclaré à Greg James
+        lors de l'émission Radio 1 Breakfast. 
+        "J'ai enfin remporté ma première victoire", dit-il. "Cela faisait
+        longtemps."
+      </p>
+    </div>
+  </article>
+</div>
+
+      </article>
+      <hr>
+    </div>
+      <section id = "merci">        <!-- Section contenant le bouton qui active l'animation sprite -->
+        <h1>Merci d'avoir visité mon site web!</h1>
+        <button id="boutonStart">Clique moi!</button>
+    <div id="maDiv"><img id="sprite2" src = "images/Sprite2/sprite2_1.png" alt="" /></div>
+      </section>
+      
+    </main>
+    
+   <footer id="piedpage">
+  <div id="footer-container">
+    <div class="footer-column">
+      <p>Hanson Tan</p>
+    </div>
+    <div class="footer-column">
+      <p>TIM 2024 Maisonneuve</p>
+    </div>
+    <div id="footer-sociaux">
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    </div>
+  </div>
+  <p id="footer-copy">© 2025 Hanson Tan. Tous droits réservés.</p>
+</footer>
+
+
+  
+  </body>
+</html>
